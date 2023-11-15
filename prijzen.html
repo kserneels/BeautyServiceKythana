@@ -23,235 +23,298 @@
             color: white !important;
           }
 
-    .instagram-title-divider {
-        height: 3px !important;
-        width: 30vh !important;
-        background-color: #e46286;
-        margin: 0;
-        outline: none;
-        border: none;
+    li {
+        display: flex;
+        justify-content: space-between;
     }
-    .prijslijst{
-        border-radius: 20px;
-        background-color: #fff;
-  }
-  
 
-        
-        
-         
+    .service {
+        flex-grow: 1;
+    }
+
+   
+     
 </style>
 
-<body style="background-color: #f9e7f1;">
-  <nav
-  class="navbar navbar-expand-lg bg-primary fw-bold"
-  style="background-color: white !important"
->
-  <div class="container">
-    <div class="d-flex align-items-center">
-      <img
-        src="favicon/android-chrome-256x256.png"
-        alt="Logo"
-        style="
-          width: 50px;
-          height: auto;
-          margin-right: 20px;
-          border-radius: 25px;
-        "
-      />
-      <h4>
-        <a href="index.html" style="text-decoration: none; color: #212121"
-          >Beauty Service Kythana</a
-        >
-      </h4>
-    </div>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div
-      class="collapse navbar-collapse justify-content-end"
-      id="navbarNav"
-    >
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="producten.html">Producten</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="prijzen.html">Prijzen</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary fw-bold">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <img
+              src="favicon/android-chrome-256x256.png"
+              alt="Logo"
+              class="nav-logo"
+            />
+            <h5>
+              <a href="index.html" class="nav-logo-title">
+                Beauty Service Kythana
+              </a>
+            </h5>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="producten.html">Producten</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="prijzen.html">Prijzen</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
 <hr class="contrast-divider" />
-<div class="container">
-    <div class="row mt-5">
-        <div class="col-md-6 prijslijst">
+<div class="container" style="min-height: 100vh;">
+    <div class="row mt-5 justify-content-md-evenly">
+        <div class="col-md-5 prijslijst">
             <h2 class="text-center">Nagels</h2>
             <div class="d-flex justify-content-center">
                 <hr class="instagram-title-divider mb-4" />
               </div>
-            <ul style="list-style: none;">
-                <li>manicure</li>
-                <li>manicure + nagellak</li>
-                <li>nieuwe set + verlenging</li>
-                <li>nieuwe set zonder verlenging</li>
-                <li>bijwerking 3-4 weken</li>
-                <li>bijwerking +4 weken</li>
-                <li>gellak</li>
-                <li>nail art</li>
-                <li>nagel herstellen</li>
-                <li>verwijderen kunstnagel + manicure</li>
-            </ul>
+              <li>
+                <span class="service">Manicure</span>
+                <span class="price">€20</span>
+            </li>
+            <li>
+                <span class="service">Manicure + Nagellak</span>
+                <span class="price">€25</span>
+            </li>
+            <li>
+                <span class="service">Nieuwe set + Verlenging</span>
+                <span class="price">€50</span>
+            </li>
+            <li>
+                <span class="service">Nieuwe set zonder Verlenging</span>
+                <span class="price">€40</span>
+            </li>
+            <li>
+                <span class="service">Bijwerking 3-4 weken</span>
+                <span class="price">€40</span>
+            </li>
+            <li>
+                <span class="service">Bijwerking +4 weken</span>
+                <span class="price">€45</span>
+            </li>
+            <li>
+                <span class="service">Gellak</span>
+                <span class="price">€30</span>
+            </li>
+            <li>
+                <span class="service">Nail Art</span>
+                <span class="price">€0.50-1.00</span>
+            </li>
+            <li>
+                <span class="service">Nagel Herstellen</span>
+                <span class="price">€2.50</span>
+            </li>
+            <li>
+                <span class="service">Verwijderen Kunstnagel + Manicure</span>
+                <span class="price">€20</span>
+            </li>
+        </ul>   
         </div>
-        <div class="col-md-6  prijslijst">
+        <div class="col-md-5 mt-5 mt-md-0 prijslijst">
             <h2 class="text-center">Suikerontharing</h2>
             <div class="d-flex justify-content-center">
                 <hr class="instagram-title-divider mb-4" />
               </div>
             <ul style="list-style: none;">
-                <li>wenkbrauwen</li>
-                <li>bovenlip</li>
-                <li>bovenlip + wenkbrauwen</li>
-                <li>gelaat</li>
-                <li>onderbenen</li>
-                <li>volledige benen</li>
-                <li>okslels</li>
-                <li>onderarmen</li>
-                <li>bikini naast slip</li>
-                <li>brazillian small</li>
-                <li>full brazillian ( schaamlippen & bilnaad)</li>
-                <li>rug of borst (voor de man)</li>
-                <li>rug & borst (voor de man)</li>
+                <li>
+                    <span class="service">wenkbrauwen</span>
+                    <span class="price">€14</span>
+                </li>
+                <li>
+                    <span class="service">bovenlip</span>
+                    <span class="price">€12</span>
+                </li>
+                <li>
+                    <span class="service">bovenlip + wenkbrauwen</span>
+                    <span class="price">€20</span>
+                </li>
+                <li>
+                    <span class="service">gelaat</span>
+                    <span class="price">€28</span>
+                </li>
+                <li>
+                    <span class="service">onderbenen</span>
+                    <span class="price">€30</span>
+                </li>
+                <li>
+                    <span class="service">volledige benen</span>
+                    <span class="price">€55</span>
+                </li>
+                <li>
+                    <span class="service">okslels</span>
+                    <span class="price">€18</span>
+                </li>
+                <li>
+                    <span class="service">onderarmen</span>
+                    <span class="price">€26</span>
+                </li>
+                
+                    <span class="service">Volledige armen</span>
+                    <span class="price">€32</span>
+                </li>
+                <li>
+                    <span class="service">bikini naast slip</span>
+                    <span class="price">€15</span>
+                </li>
+                <li>
+                    <span class="service">brazillian small</span>
+                    <span class="price">€25</span>
+                </li>
+                <li>
+                    <span class="service">full brazillian ( schaamlippen & bilnaad)</span>
+                    <span class="price">€45</span>
+                </li>
+                <li>
+                    <span class="service">rug of borst (voor de man)</span>
+                    <span class="price">€40</span>
+                </li>
+                <li>
+                    <span class="service">rug & borst (voor de man)</span>
+                    <span class="price">€70</span>
+                </li>
             </ul>
         </div>
     </div>
-    <div class="row mt-5 mb-5">
-        <div class="col-md-6 prijslijst">
-            <h2 class="text-center">Gelaatsverzorging</h2>
-            <div class="d-flex justify-content-center">
-                <hr class="instagram-title-divider mb-4" />
-              </div>
-            <ul style="list-style: none;">
-                <li>wimpers of wenkbrauwen kleuren</li>
-                <li>wimpers & wenkbrauwen kleuren</li>
-                <li>lashlift</li>
-            </ul>
-        </div>
-        <div class="col-md-6 prijslijst">
+    <div class="row mt-5 justify-content-md-evenly">
+        <div class="col-md-5 prijslijst">
             <h2 class="text-center">Wimpers & wenkbrauwen</h2>
             <div class="d-flex justify-content-center">
                 <hr class="instagram-title-divider mb-4" />
               </div>
             <ul style="list-style: none;">
-                <li>analyse facial</li>
-                <li>mrecovery facial</li>
-                <li>alround deluxe facial</li>
+                <li>
+                    <span class="service">wimpers of wenkbrauwen kleuren</span>
+                    <span class="price">€12</span>
+                </li>
+                <li>
+                    <span class="service">wimpers & wenkbrauwen kleuren</span>
+                    <span class="price">€22</span>
+                </li>
+                <li>
+                    <span class="service">lashlift</span>
+                    <span class="price">€60</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-5 mt-5 mt-md-0 prijslijst">
+            <h2 class="text-center">Gelaatsverzorging</h2>
+            <div class="d-flex justify-content-center">
+                <hr class="instagram-title-divider mb-4" />
+              </div>
+            <ul style="list-style: none;">
+                <li>
+                    <span class="service">analyse facial</span>
+                    <span class="price">€50</span>
+                </li>
+                <li>
+                    <span class="service">recovery facial</span>
+                    <span class="price">€70</span>
+                </li>
+                <li>
+                    <span class="service">alround deluxe facial</span>
+                    <span class="price">€100</span>
+                </li>
             </ul>
         </div>
     </div>
 </div>
-    
-   
     <hr class="contrast-divider" />
-    <footer style="background-color: #fbfbfa; padding: 50px 0 0 0">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-4">
-            <h5>Beauty Service</h5>
-            Renderstraat 12
-            <br />
-            2260 Westerlo
-            <br />
-            België
-            <br />
-            <b
-              ><a href="tel:+32468126997" style="color: #212121"
-                >+32 468 12 69 97</a
-              ></b
-            >
-            <br />
-            <a
-              href="mailto:beautyservicekythana@hotmail.com"
-              style="color: #212121"
-              >beautyservicekythana@hotmail.com</a
-            >
-          </div>
-          <div class="col-md-4">
-            <h5>Meer informatie</h5>
-            <a href="" style="color: #212121; text-decoration: none"
+    <footer>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">Beauty Service</h5>
+          <span class="footer-icon-contact">
+            <i class="bi bi-geo-alt"></i>
+          </span>
+          Renderstraat 12, 2260 Westerlo
+          <br />
+          <span class="footer-icon-contact">
+            <i class="bi bi-telephone"></i>
+          </span>
+          <a href="tel:+32468126997" class="custom-a-tag">+32 468 12 69 97</a>
+          <br />
+          <span class="footer-icon-contact">
+            <i class="bi bi-envelope"></i>
+          </span>
+          <a
+            href="mailto:beautyservicekythana@hotmail.com"
+            class="custom-a-tag"
+          >
+            beautyservicekythana@hotmail.com
+          </a>
+          <br />
+          <span class="footer-icon-contact">
+            <i class="bi bi-bank"></i>
+          </span>
+          <a
+            class="custom-a-tag"
+          >
+            BTW BE 0123.456.789
+          </a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold">Meer informatie</h5>
+          <div class="my-1">
+            <a href="algemenevoorwaarden.html" class="custom-a-tag"
               >Algemene voorwaarden</a
             >
-            <br />
-            <a href="" style="color: #212121; text-decoration: none"
-              >Privacybeleid</a
-            >
-            <br />
-            <a href="contact.html" style="color: #212121; text-decoration: none"
-              >Contact</a
-            >
           </div>
-          <div class="col-md-4">
-            <h5>Blijf op de hoogte. Volg ons!!</h5>
-            <span style="font-size: xx-large; margin: 2px">
-              <a
-                href="https://www.instagram.com/beautyservice__kythana/?igshid=M2RkZGJiMzhjOQ%3D%3D"
-                style="color: #212121"
-                target="_blank"
-              >
-                <i class="bi bi-instagram"></i
-              ></a>
-            </span>
-            <span style="font-size: xx-large; margin: 2px">
-              <a href="test" style="color: #212121" target="_blank"
-                ><i class="bi bi-facebook"></i
-              ></a>
-            </span>
+          <div class="my-1">
+            <a href="privacybeleid.html" class="custom-a-tag">Privacybeleid</a>
+          </div>
+          <div class="my-1">
+            <a href="contact.html" class="custom-a-tag">Contact</a>
           </div>
         </div>
+        <div class="col-md-4">
+          <h5 class="fw-bold">Blijf op de hoogte. Volg ons!!</h5>
+          <span class="footer-custom-icon">
+            <a
+              href="https://www.instagram.com/beautyservice__kythana/?igshid=M2RkZGJiMzhjOQ%3D%3D"
+              target="_blank"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+          </span>
+          <span class="footer-custom-icon">
+            <a href="https://www.facebook.com/profile.php?id=61553330051837" target="_blank">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </span>
+        </div>
       </div>
-      <hr class="bg-primary" />
-      <p class="text-center" style="margin: 0; padding: 10px 0">
-        Copyright &copy 2023, Beauty Service Kythana
-      </p>
-    </footer>
-
-    <script>
-        // JavaScript to handle accordion toggling
-        var accordionItems = document.querySelectorAll('.accordion-item');
-    
-        accordionItems.forEach(function(item) {
-            item.addEventListener('click', function() {
-                var isCollapsed = item.querySelector('.accordion-button').getAttribute('aria-expanded') === 'false';
-    
-                // Close all accordion items
-                accordionItems.forEach(function(innerItem) {
-                    innerItem.querySelector('.accordion-button').setAttribute('aria-expanded', 'false');
-                    innerItem.querySelector('.accordion-collapse').classList.remove('show');
-                });
-    
-                // If the clicked item was collapsed, open it
-                if (isCollapsed) {
-                    item.querySelector('.accordion-button').setAttribute('aria-expanded', 'true');
-                    item.querySelector('.accordion-collapse').classList.add('show');
-                }
-            });
-        });
-    </script>
+    </div>
+    <hr class="bg-primary" />
+    <p class="text-center footer-copyright">
+      Copyright &copy 2023, Beauty Service Kythana
+    </p>
+  </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
