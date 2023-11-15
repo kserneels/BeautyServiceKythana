@@ -137,3 +137,15 @@ input.contact-input-text:-webkit-autofill {
   background-color: #d0b069 !important;
   color: white !important;
 }
+
+/* Hide Elfsight logo container */
+.elfsight-app-1ef9dd8b-5021-4bc4-95ec-55124cce7702 div[title="Remove Elfsight logo"] {
+  visibility: hidden !important;
+  
+  
+}
+
+.elfsight-app-1ef9dd8b-5021-4bc4-95ec-55124cce7702 [title="Remove Elfsight logo"] {
+  visibility: hidden !important;
+}
+
