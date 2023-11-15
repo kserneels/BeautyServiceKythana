@@ -1,8 +1,19 @@
-$primary: #F9E7F1;
+$primary: #FBFBFA;
 $light: #FFFFFF;
 $dark: #FBFBFA;
 $danger: #AA8F5B;
 
+#navbarNav {
+    li {
+        a {
+            transition: color 0.3s, text-decoration 0.3s;
+            &:hover {
+                color: green;
+                text-decoration: underline;
+            }
+        }
+    }
+}
 
 
 
