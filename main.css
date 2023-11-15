@@ -1,0 +1,139 @@
+/* Navbar */
+.navbar-nav .nav-item {
+  margin-right: 20px;
+  text-decoration: none;
+  position: relative;
+}
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust the position of the underline */
+  left: 50%; /* Start the underline from the middle */
+  width: 0;
+  height: 2px; /* Adjust the underline thickness */
+  background-color: pink;
+  transition: width 0.3s ease-out, left 0.3s ease-out; /* Add transition effect */
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: calc(100% - 20px); /* Expand the underline to the sides */
+  left: 10px; /* Shift the expanded underline to the side */
+}
+
+.contrast-divider {
+  height: 10px;
+  background-color: #e46286;
+  width: 100%;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+/* navbar */
+
+/* Vooral contact pagina css */
+/* background contact informatie */
+.custom-bg {
+  color: #212121;
+  background-color: #fbfbfa;
+  padding: 60px;
+}
+/* background google maps */
+.custom-map-bg {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Zet hoogte van maps op 300px op gsm scherm */
+@media (max-width: 768px) {
+  .custom-map-bg {
+    height: 300px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .custom-bg {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+}
+
+/* Zet hoogte van maps op 100% op gsm scherm */
+@media (min-width: 769px) {
+  .custom-map-bg {
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .custom-bg {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+/* voegt margin toe op contact-beauty */
+.contact-beauty {
+  margin-bottom: 60px;
+}
+
+.contact-top {
+  margin-bottom: 83px;
+}
+
+.contact-bottom {
+  margin-bottom: 83px;
+}
+
+/* individueel contact detail */
+.contact-detail {
+  padding: 0 15px;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* input field contact */
+.contact-input {
+  padding: 0 15px;
+  margin: 0 0 27px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Common styles for input and textarea with the class .contact-input-text */
+.contact-input-text {
+  height: 56px;
+  padding: 0 25px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/* Styles for when the input or textarea is focused */
+textarea.contact-input-text:focus,
+input.contact-input-text:focus {
+  background-color: transparent;
+  border: none;
+}
+
+/* Styles for autofilled input or textarea */
+textarea.contact-input-text:-webkit-autofill,
+input.contact-input-text:-webkit-autofill {
+  background-color: transparent;
+  border: none;
+}
+
+/* verandert outline wanneer er op een input gefocused wordt */
+.contact-input:focus-within {
+  outline: 2px solid #d0b069;
+}
+
+.btn {
+  background-color: #fbfbfa !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #d0b069 !important;
+  color: white !important;
+}
