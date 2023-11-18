@@ -1,250 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Kenzo Serneels">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Kenzo Serneels" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="main.css" />
     <title>BeautyService Kythana</title>
-</head>
-<style>
-  .btn1 {
-            background-color: #fbfbfa !important;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          }
-        
-          .btn:hover {
-            background-color: #d0b069 !important;
-            color: white !important;
-          }
+  </head>
+  <style>
+    .btn1 {
+      background-color: #fbfbfa !important;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn:hover {
+      background-color: #d0b069 !important;
+      color: white !important;
+    }
 
     li {
-        display: flex;
-        justify-content: space-between;
+      display: flex;
+      justify-content: space-between;
     }
 
     .service {
-        flex-grow: 1;
+      flex-grow: 1;
     }
+  </style>
 
-   
-     
-</style>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg bg-primary fw-bold">
-        <div class="container">
-          <div class="d-flex align-items-center">
-            <img
-              src="favicon/android-chrome-256x256.png"
-              alt="Logo"
-              class="nav-logo"
-            />
-            <h5>
-              <a href="index.html" class="nav-logo-title">
-                Beauty Service Kythana
-              </a>
-            </h5>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <img
+            src="favicon/android-chrome-256x256.png"
+            alt="Logo"
+            class="nav-logo"
+          />
+          <h5>
+            <a href="index.html" class="nav-logo-title">
+              Beauty Service Kythana
+            </a>
+          </h5>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="producten.html">Producten</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="prijzen.html">Prijzen</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-      </nav>    
-<hr class="contrast-divider" />
-<div class="container" style="min-height: 100vh;">
-    <div class="row mt-5 justify-content-md-evenly">
-        <div class="col-md-5 prijslijst">
-            <h2 class="text-center">Nagels</h2>
-            <div class="d-flex justify-content-center">
-                <hr class="instagram-title-divider mb-4" />
-              </div>
-              <li>
-                <span class="service">Manicure</span>
-                <span class="price">€20</span>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
-            <li>
-                <span class="service">Manicure + Nagellak</span>
-                <span class="price">€25</span>
+            <li class="nav-item">
+              <a class="nav-link" href="producten.html">Producten</a>
             </li>
-            <li>
-                <span class="service">Nieuwe set + Verlenging</span>
-                <span class="price">€50</span>
+            <li class="nav-item">
+              <a class="nav-link active" href="prijzen.html">Prijzen</a>
             </li>
-            <li>
-                <span class="service">Nieuwe set zonder Verlenging</span>
-                <span class="price">€40</span>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
-            <li>
-                <span class="service">Bijwerking 3-4 weken</span>
-                <span class="price">€40</span>
-            </li>
-            <li>
-                <span class="service">Bijwerking +4 weken</span>
-                <span class="price">€45</span>
-            </li>
-            <li>
-                <span class="service">Gellak</span>
-                <span class="price">€30</span>
-            </li>
-            <li>
-                <span class="service">Nail Art</span>
-                <span class="price">€0.50-1.00</span>
-            </li>
-            <li>
-                <span class="service">Nagel Herstellen</span>
-                <span class="price">€2.50</span>
-            </li>
-            <li>
-                <span class="service">Verwijderen Kunstnagel + Manicure</span>
-                <span class="price">€20</span>
-            </li>
-        </ul>   
+          </ul>
         </div>
-        <div class="col-md-5 mt-5 mt-md-0 prijslijst">
-            <h2 class="text-center">Suikerontharing</h2>
-            <div class="d-flex justify-content-center">
-                <hr class="instagram-title-divider mb-4" />
-              </div>
-            <ul style="list-style: none;">
-                <li>
-                    <span class="service">wenkbrauwen</span>
-                    <span class="price">€14</span>
-                </li>
-                <li>
-                    <span class="service">bovenlip</span>
-                    <span class="price">€12</span>
-                </li>
-                <li>
-                    <span class="service">bovenlip + wenkbrauwen</span>
-                    <span class="price">€20</span>
-                </li>
-                <li>
-                    <span class="service">gelaat</span>
-                    <span class="price">€28</span>
-                </li>
-                <li>
-                    <span class="service">onderbenen</span>
-                    <span class="price">€30</span>
-                </li>
-                <li>
-                    <span class="service">volledige benen</span>
-                    <span class="price">€55</span>
-                </li>
-                <li>
-                    <span class="service">okslels</span>
-                    <span class="price">€18</span>
-                </li>
-                <li>
-                    <span class="service">onderarmen</span>
-                    <span class="price">€26</span>
-                </li>
-                
-                    <span class="service">Volledige armen</span>
-                    <span class="price">€32</span>
-                </li>
-                <li>
-                    <span class="service">bikini naast slip</span>
-                    <span class="price">€15</span>
-                </li>
-                <li>
-                    <span class="service">brazillian small</span>
-                    <span class="price">€25</span>
-                </li>
-                <li>
-                    <span class="service">full brazillian ( schaamlippen & bilnaad)</span>
-                    <span class="price">€45</span>
-                </li>
-                <li>
-                    <span class="service">rug of borst (voor de man)</span>
-                    <span class="price">€40</span>
-                </li>
-                <li>
-                    <span class="service">rug & borst (voor de man)</span>
-                    <span class="price">€70</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row mt-5 justify-content-md-evenly">
-        <div class="col-md-5 prijslijst">
-            <h2 class="text-center">Wimpers & wenkbrauwen</h2>
-            <div class="d-flex justify-content-center">
-                <hr class="instagram-title-divider mb-4" />
-              </div>
-            <ul style="list-style: none;">
-                <li>
-                    <span class="service">wimpers of wenkbrauwen kleuren</span>
-                    <span class="price">€12</span>
-                </li>
-                <li>
-                    <span class="service">wimpers & wenkbrauwen kleuren</span>
-                    <span class="price">€22</span>
-                </li>
-                <li>
-                    <span class="service">lashlift</span>
-                    <span class="price">€60</span>
-                </li>
-            </ul>
-        </div>
-        <div class="col-md-5 mt-5 mt-md-0 prijslijst">
-            <h2 class="text-center">Gelaatsverzorging</h2>
-            <div class="d-flex justify-content-center">
-                <hr class="instagram-title-divider mb-4" />
-              </div>
-            <ul style="list-style: none;">
-                <li>
-                    <span class="service">analyse facial</span>
-                    <span class="price">€50</span>
-                </li>
-                <li>
-                    <span class="service">recovery facial</span>
-                    <span class="price">€70</span>
-                </li>
-                <li>
-                    <span class="service">alround deluxe facial</span>
-                    <span class="price">€100</span>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
+      </div>
+    </nav>
     <hr class="contrast-divider" />
-    <footer>
+
+    <div class="container" style="min-height: 90vh">
+      <div class="row mt-5 justify-content-md-evenly">
+        <div class="col-md-5 prijslijst py-4">
+          <h2 class="text-center">Nagels</h2>
+          <div class="d-flex justify-content-center">
+            <hr class="instagram-title-divider mb-4" />
+          </div>
+          <ul>
+            <li>
+              <span class="service">Manicure</span>
+              <span class="price">€20</span>
+            </li>
+            <li>
+              <span class="service">Manicure + Nagellak</span>
+              <span class="price">€25</span>
+            </li>
+            <li>
+              <span class="service">Nieuwe set + Verlenging</span>
+              <span class="price">€50</span>
+            </li>
+            <li>
+              <span class="service">Nieuwe set zonder Verlenging</span>
+              <span class="price">€40</span>
+            </li>
+            <li>
+              <span class="service">Bijwerking 3-4 weken</span>
+              <span class="price">€40</span>
+            </li>
+            <li>
+              <span class="service">Bijwerking +4 weken</span>
+              <span class="price">€45</span>
+            </li>
+            <li>
+              <span class="service">Gellak</span>
+              <span class="price">€30</span>
+            </li>
+            <li>
+              <span class="service">Nail Art</span>
+              <span class="price">€0.50-1.00</span>
+            </li>
+            <li>
+              <span class="service">Nagel Herstellen</span>
+              <span class="price">€2.50</span>
+            </li>
+            <li>
+              <span class="service">Verwijderen Kunstnagel + Manicure</span>
+              <span class="price">€20</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 mt-5 mt-md-0 prijslijst py-4">
+          <h2 class="text-center">Suikerontharing</h2>
+          <div class="d-flex justify-content-center">
+            <hr class="instagram-title-divider mb-4" />
+          </div>
+          <ul style="list-style: none">
+            <li>
+              <span class="service">wenkbrauwen</span>
+              <span class="price">€14</span>
+            </li>
+            <li>
+              <span class="service">bovenlip</span>
+              <span class="price">€12</span>
+            </li>
+            <li>
+              <span class="service">bovenlip + wenkbrauwen</span>
+              <span class="price">€20</span>
+            </li>
+            <li>
+              <span class="service">gelaat</span>
+              <span class="price">€28</span>
+            </li>
+            <li>
+              <span class="service">onderbenen</span>
+              <span class="price">€30</span>
+            </li>
+            <li>
+              <span class="service">volledige benen</span>
+              <span class="price">€55</span>
+            </li>
+            <li>
+              <span class="service">okslels</span>
+              <span class="price">€18</span>
+            </li>
+            <li>
+              <span class="service">onderarmen</span>
+              <span class="price">€26</span>
+            </li>
+            <li>
+              <span class="service">Volledige armen</span>
+              <span class="price">€32</span>
+            </li>
+            <li>
+              <span class="service">bikini naast slip</span>
+              <span class="price">€15</span>
+            </li>
+            <li>
+              <span class="service">brazillian small</span>
+              <span class="price">€25</span>
+            </li>
+            <li>
+              <span class="service"
+                >full brazillian ( schaamlippen & bilnaad)</span
+              >
+              <span class="price">€45</span>
+            </li>
+            <li>
+              <span class="service">rug of borst (voor de man)</span>
+              <span class="price">€40</span>
+            </li>
+            <li>
+              <span class="service">rug & borst (voor de man)</span>
+              <span class="price">€70</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-md-evenly">
+        <div class="col-md-5 prijslijst py-4">
+          <h2 class="text-center">Wimpers & wenkbrauwen</h2>
+          <div class="d-flex justify-content-center">
+            <hr class="instagram-title-divider mb-4" />
+          </div>
+          <ul style="list-style: none">
+            <li>
+              <span class="service">wimpers of wenkbrauwen kleuren</span>
+              <span class="price">€12</span>
+            </li>
+            <li>
+              <span class="service">wimpers & wenkbrauwen kleuren</span>
+              <span class="price">€22</span>
+            </li>
+            <li>
+              <span class="service">lashlift</span>
+              <span class="price">€60</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 mt-5 mt-md-0 prijslijst py-4">
+          <h2 class="text-center">Gelaatsverzorging</h2>
+          <div class="d-flex justify-content-center">
+            <hr class="instagram-title-divider mb-4" />
+          </div>
+          <ul style="list-style: none">
+            <li>
+              <span class="service">analyse facial</span>
+              <span class="price">€50</span>
+            </li>
+            <li>
+              <span class="service">recovery facial</span>
+              <span class="price">€70</span>
+            </li>
+            <li>
+              <span class="service">alround deluxe facial</span>
+              <span class="price">€100</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="contrast-divider" />
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <footer>
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-4 mb-3">
@@ -272,11 +276,7 @@
           <span class="footer-icon-contact">
             <i class="bi bi-bank"></i>
           </span>
-          <a
-            class="custom-a-tag"
-          >
-            BTW BE 0123.456.789
-          </a>
+          <a class="custom-a-tag"> BTW BE 0123.456.789 </a>
         </div>
         <div class="col-md-4 mb-3">
           <h5 class="fw-bold">Meer informatie</h5>
@@ -303,7 +303,10 @@
             </a>
           </span>
           <span class="footer-custom-icon">
-            <a href="https://www.facebook.com/profile.php?id=61553330051837" target="_blank">
+            <a
+              href="https://www.facebook.com/profile.php?id=61553330051837"
+              target="_blank"
+            >
               <i class="bi bi-facebook"></i>
             </a>
           </span>
@@ -315,8 +318,4 @@
       Copyright &copy 2023, Beauty Service Kythana
     </p>
   </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"> </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 </html>
-

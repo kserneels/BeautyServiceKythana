@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  min-height: 100vh !important;
   background-color: #f9e7f1 !important;
 }
 footer {
@@ -314,7 +314,7 @@ input.contact-input-text:-webkit-autofill {
   outline: 2px solid #d0b069;
 }
 
-.prijslijst{
+.prijslijst {
   border-radius: 20px;
   background-color: #fff;
 }
@@ -329,5 +329,3 @@ input.contact-input-text:-webkit-autofill {
   [title="Remove Elfsight logo"] {
   visibility: hidden !important;
 }
-
-

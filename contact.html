@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Kenzo Serneels">
+    <meta name="author" content="Kenzo Serneels" />
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
     <title>BeautyService Kythana</title>
     <link rel="stylesheet" href="css/main.min.css" />
@@ -83,8 +83,9 @@
           <div class="contact-beauty">
             <h3>Beauty Service</h3>
             <p>
-              Beautyservice kythana is gelegen in Heultje, Westerlo. Aan de broodjeszaak 
-              t'bulldogske is de zaak gelegen. Hier ontvang ik jullie met plezier.
+              Beautyservice kythana is gelegen in Heultje, Westerlo. Aan de
+              broodjeszaak t'bulldogske is de zaak gelegen. Hier ontvang ik
+              jullie met plezier.
             </p>
           </div>
           <div class="row">
@@ -136,14 +137,14 @@
         </div>
       </div>
       <div class="row contact-bottom" id="contact-bottom">
-        <div class="col-md-5 d-none d-md-block">
-          <!-- <img
+        <!--<div class="col-md-5 d-none d-md-block">
+          <img
             src=""
             alt="contact foto'tje"
             class="contact-picture"
-          /> -->
-        </div>
-        <div class="col-md-7">
+          />
+        </div> -->
+        <div class="offset-md-2 col-md-8">
           <form action="send_email.php" method="post">
             <div class="row">
               <div class="col-6">
@@ -152,6 +153,7 @@
                     type="text"
                     class="form-control contact-input-text"
                     id="voornaam"
+                    name="voornaam"
                     aria-describedby="voornaam"
                     placeholder="Voornaam"
                     autocomplete="off"
@@ -163,6 +165,7 @@
                   <input
                     type="text"
                     class="form-control contact-input-text"
+                    name="achternaam"
                     id="achternaam"
                     aria-describedby="achternaam"
                     placeholder="Achternaam"
@@ -177,6 +180,7 @@
                   <input
                     type="text"
                     class="form-control contact-input-text"
+                    name="email"
                     id="email"
                     aria-describedby="email"
                     placeholder="E-mail address"
@@ -189,6 +193,7 @@
                   <input
                     type="text"
                     class="form-control contact-input-text"
+                    name="telefoonnummer"
                     id="telefoonnummer"
                     aria-describedby="telefoonnummer"
                     placeholder="Telefoonnummer"
@@ -200,6 +205,7 @@
             <div class="mb-3 contact-input">
               <textarea
                 class="form-control contact-input-text contact-textarea"
+                name="bericht"
                 id="bericht"
                 aria-describedby="bericht"
                 placeholder="Bericht"
@@ -244,11 +250,7 @@
           <span class="footer-icon-contact">
             <i class="bi bi-bank"></i>
           </span>
-          <a
-            class="custom-a-tag"
-          >
-            BTW BE 0123.456.789
-          </a>
+          <a class="custom-a-tag"> BTW BE 0123.456.789 </a>
         </div>
         <div class="col-md-4 mb-3">
           <h5 class="fw-bold">Meer informatie</h5>
@@ -275,7 +277,10 @@
             </a>
           </span>
           <span class="footer-custom-icon">
-            <a href="https://www.facebook.com/profile.php?id=61553330051837" target="_blank">
+            <a
+              href="https://www.facebook.com/profile.php?id=61553330051837"
+              target="_blank"
+            >
               <i class="bi bi-facebook"></i>
             </a>
           </span>
