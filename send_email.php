@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $telefoonnummer = $_POST['telefoonnummer'];
     $bericht = $_POST['bericht'];
+    $naam = [$voornaam, $achternaam];
 
     // PHPMailer configuration
     $mail = new PHPMailer(true);
@@ -30,7 +31,7 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('beautyservicekythana@gmail.com', 'gmail');
+    $mail->setFrom($email, $naam);
     $mail->addAddress('beautyservicekythana@hotmail.com', 'hotmail');     //Add a recipient
     $mail->addReplyTo($email, 'Email_persoon');
    
