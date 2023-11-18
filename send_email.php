@@ -32,17 +32,19 @@ try {
     //Recipients
     $mail->setFrom('beautyservicekythana@gmail.com', 'gmail');
     $mail->addAddress('beautyservicekythana@hotmail.com', 'hotmail');     //Add a recipient
-    $mail->addReplyTo('info@example.com', 'Information');
+    $mail->addReplyTo($email, 'Email_persoon');
    
 
      // Content
      $mail->isHTML(true);
-     $mail->Subject = 'New Contact Form Submission';
-     $mail->Body    = "Voornaam: $voornaam <br> Achternaam: $achternaam <br> Email: $email <br> Telefoonnummer: $telefoonnummer <br> Bericht: $bericht";
+     $mail->Subject = 'Beauty Service vragen';
+     $mail->Body    = "Bericht: $bericht <br> Voornaam: $voornaam <br> Achternaam: $achternaam <br> Telefoonnummer: $telefoonnummer";
 
      $mail->send();
-     echo 'Message has been sent';
+     header('Location: contact.html');
+        exit();
  } catch (Exception $e) {
-     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    header('Location: contact.html');
+        exit();
  }
 }
